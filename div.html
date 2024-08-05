@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            background-color: aliceblue;
+            border: solid 1px;
+        }
+        div {
+            display: inline-block; /*가로세로 크기를 적용하면서 인라인처럼 배치하고싶을때*/
+            width: 200px;
+            height: 50px;
+            background-color: rgb(143, 112, 214);
+            border: solid 1px;
+        }
+        input {
+            display: block;
+            width: 200px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- block 태그
+    1. 라인이 바뀐다. 즉, 아래로 배치된다.
+    2. width, height 스타일이 적용된다. -->
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <!--블록 형식은 br태그를 안붙여도 줄바뀜, 
+        가로세로 크기가 가능하다 (인라인태그는 가로세로못함)-->
+
+    <!-- inline 태그
+    1. 라인이 바뀌지 않는다. 즉, 옆으로 배치된다. 
+    2. width, height 스타일이 적용되지 않는다.  -->
+    <span>span 태그 - in line 형식</span>
+    <span>span 태그 - in line 형식</span>
+    <span>span 태그 - in line 형식</span>
+    <span>span 태그 - in line 형식</span>
+    <span>span 태그 - in line 형식</span>
+    <!--인라인 형식은 자동 줄바뀜이 안되고, 
+            style적용이 가로세로는 안먹힌다-->
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

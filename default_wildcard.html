@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: red;
+            h1 { /*명시적으로 적힌 태그가 있다면 우선한다*/
+                color: orange;
+            }
+            #header { /*명시적 태그보다 아이디가 우선한다*/
+                color: aqua;
+            }
+            .myclass {
+                color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header" class="myclass">제목 글자 태그 </h1>
+    <!-- id : 하나만 있다는 뜻, class : -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus explicabo omnis repellendus repellat accusamus architecto iusto, in consequatur quidem reprehenderit aliquam assumenda vitae cupiditate qui libero quas nostrum veniam vero!</p>
+    <h1>제목 글자 태그 </h1>
+    <p class="myclass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, at sit vel est molestiae atque maxime nihil harum eius minus sunt ad ducimus, quo saepe natus repellat totam laboriosam eum?</p>
+    <!--클래스 . 타입을 많이들 쓴다 -->
+</body>
+</html>

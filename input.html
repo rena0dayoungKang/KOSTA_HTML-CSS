@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action ="test.html"> <!--눈에 보이지 않는 form태그-->
+        <!--form태그의 submit은 사용자가 입력한 값을 url에 다 가지고 넘어간다-->
+        <input type="text" name="name"><br/>
+        <input type="password" name="password"><br/>
+        <input type="file" name="profile"><br/>
+        <input type="checkbox" name="hobby" value="book">독서<br/>
+        <input type="checkbox" name="hobby" value="movie">영화감상<br/>
+        <input type="checkbox" name="hobby" value="sport">운동<br/>
+        <!--중복선택이 가능한 checkbox-->
+        
+        <input type="radio" name="gender" value="male">남
+        <input type="radio" name="gender" value="female">여<br/>
+        <!--radio의 특징은 여러개 중 하나만 선택할때 사용, 대신 name이 같아야한다-->
+
+        <input type="hidden" name="page" value="2">
+        <!--보이지 않지만 특정 값을 꼭 넘겨주어야 할 때 사용-->
+
+        <input type="button" value="button"><br/>
+        <input type="reset" value="reset"><br/>
+        <input type="submit" value="submit"><br/> <!--form 태그의 action링크로 접속-->
+        <input type="image" src="https://placehold.it/100x100">
+    </form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border = "1">
+        <thead> <!-- thead는 생략가능하다-->
+            <tr>
+                <th></th> <!--bold처리 된 td-->
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody> <!--tbody는 생략하면 브라우저에서 강제 주입하므로 
+                    생략하면 안된다! -->
+            <tr>
+                <td>1교시</td>
+                <td>영어</td>
+                <td>국어</td>
+                <td>과학</td>
+                <td>미술</td>
+                <td>기술</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>도덕</td>
+                <td>체육</td>
+                <td>영어</td>
+                <td>수학</td>
+                <td>사회</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border = "1">
+        <tbody>
+            <tr>
+                <th colspan="2">지역별 홍차</th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">중국</th>
+                <td>정산소종</td>
+            </tr>
+            <tr>
+                <td>기문</td>
+            </tr>
+            <tr>
+                <td>우남</td>
+            </tr>
+
+            <tr>
+                <th rowspan="4">인도<br/>및<br/>스리랑카</th>
+                <td>아삼</td>
+            </tr>
+            <tr>
+                <td>실론</td>
+            </tr>
+            <tr>
+                <td>다즐링</td>
+            </tr>
+            <tr>
+                <td>닐기리</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br/>  
+
+    <table>
+        <tr>
+            <td><label>아이디</label></td>
+            <td><input type="text"/><br/></td>
+        </tr>
+        <tr>
+            <td><label>비밀번호</label></td>
+            <td> <input type="text"/><br/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>로그인</button></td>
+        </tr>
+    </table>
+</body>
+</html>

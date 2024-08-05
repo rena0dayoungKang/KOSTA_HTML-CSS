@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="test.html">
+        <select name="menu" id=""> <!--데이터를 가져갈때 key가 된다-->
+            <option value="김밥">김밥</option>
+            <option value="떡볶이">떡볶이</option>
+            <option value="순대">순대</option>
+            <option value="어묵">어묵</option>
+            <!--실제 백엔드에 값을 보낼때는 "key=value" 형태로 전송-->
+        </select>
+        <input type="submit" value="전송">
+    </form>
+
+    <form action="test.html">
+        <select name="menu" id="" multiple>
+            <option value="김밥">김밥</option>
+            <option value="떡볶이">떡볶이</option>
+            <option value="순대">순대</option>
+            <option value="어묵">어묵</option>
+        </select>
+        <input type="submit" value="전송">
+        <!--menu=김밥&menu=떡볶이&menu=순대&menu=어묵 형태로 test.html로 간다-->
+    </form>
+
+    <form action="test.html">
+        <select name="skill">
+            <optgroup label="HTML5">
+                <option value="mut">Multimedia Tag</option>
+                <option value="con">Connectivity</option>
+                <option value="dev">Device Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option value="ani">Animation</option>
+                <option value="3dt">3D Transform</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="전송">
+    </form>
+</body>
+
+</html>
