@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            /*사용할 폰트 이름*/
+            font-family: "BMJUA";
+            /*적용할 / 다운받을 폰트 경로 및 타입*/
+            src:url("BMJUA.woff") format("woff");
+            /*사용할 폰트 굵기(기본값)*/
+            font-weight: normal;
+            /*사용할 폰트 스타일 (기본값)*/
+            font-style: normal;
+        }
+
+        body {
+            /*폰트는 상속되기 때문에 상위에서 선언해주면 모두 적용됨*/
+            font-family: "BMJUA", "Noto Sans KR", sans-serif;
+        }
+
+        * {
+            margin : 0;
+            padding : 0;
+        }
+
+        body {
+            width: 960px;
+            margin : 0 auto;
+            overflow: hidden;
+        }
+
+        #menu {
+            width: 260px;
+            float: left;
+
+        }
+
+        #section {
+            width: 700px;
+            float: right;
+        }
+
+        @media screen and (max-width:767px) {
+            /* 스마트폰 사이즈에서는 전부 해제  */
+            body {
+                width: auto;
+            }
+            #menu {
+                /* display: none; */
+            }
+            #section {
+                width: auto;
+                float: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>메뉴A</li>
+            <li>메뉴B</li>
+            <li>메뉴C</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>lorem ipsum</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi facilis quasi provident ea nulla, eius minima perferendis magnam, officia dolorum deserunt, fugit quis incidunt iusto ipsum laudantium. Est, impedit hic!</p>
+        <p></p>
+    </div>
+</body>
+</html>
